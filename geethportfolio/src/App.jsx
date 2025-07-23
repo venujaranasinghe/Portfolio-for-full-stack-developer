@@ -1,35 +1,29 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Header from "./components/header.jsx"
+import HeroSection from "./components/hero-section.jsx"
+import ServicesSection from "./components/services-section.jsx"
+import ProjectsSection from "./components/projects-section.jsx"
+import AboutSection from "./components/about-section.jsx"
+import SkillsSection from "./components/skills-section.jsx"
+import TestimonialsSection from "./components/testimonials-section.jsx"
+import BlogSection from "./components/blog-section.jsx"
+import ContactSection from "./components/contact-section.jsx"
+import Footer from "./components/footer.jsx"
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default function App() {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className="min-h-screen bg-gradient-to-br from-dark-bg via-dark-bg to-black text-text-light font-sans scroll-smooth">
+      <Header />
+      <main>
+        <HeroSection />
+        <ServicesSection />
+        <ProjectsSection />
+        <AboutSection />
+        <SkillsSection />
+        <TestimonialsSection />
+        <BlogSection />
+        <ContactSection />
+      </main>
+      <Footer />
+    </div>
   )
 }
-
-export default App
