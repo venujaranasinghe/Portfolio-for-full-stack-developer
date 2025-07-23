@@ -1,0 +1,172 @@
+.header {
+  width: 100%;
+  padding: 1rem 1.5rem; /* py-4 px-6 */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 50;
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .header {
+    padding: 1rem 3rem; /* md:px-12 */
+  }
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 */
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: bold;
+  color: var(--accent-purple);
+}
+
+.logoIcon {
+  font-weight: 800; /* font-extrabold */
+  font-size: 1.875rem; /* text-3xl */
+}
+
+.logoText {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .logoText {
+    display: inline;
+  }
+}
+
+.navDesktop {
+  display: none;
+  align-items: center;
+  gap: 2rem; /* gap-8 */
+  color: var(--text-light);
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .navDesktop {
+    display: flex;
+  }
+}
+
+.navLink {
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.navLink:hover {
+  color: var(--accent-purple);
+}
+
+.actionsContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* gap-4 */
+}
+
+.hireMeButton {
+  display: none;
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .hireMeButton {
+    display: inline-flex;
+  }
+}
+
+.hireMeButton:hover {
+  background-color: var(--light-purple);
+  transform: scale(1.05);
+}
+
+.menuButton {
+  display: inline-flex;
+  color: var(--text-light);
+  /* Equivalent to shadcn's ghost button, but simplified */
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem; /* size="icon" */
+  border-radius: 0.375rem; /* rounded-md */
+}
+
+@media (min-width: 768px) {
+  /* md breakpoint */
+  .menuButton {
+    display: none;
+  }
+}
+
+.menuIcon {
+  height: 1.5rem; /* h-6 */
+  width: 1.5rem; /* w-6 */
+}
+
+.sheetContent {
+  background-color: var(--dark-bg);
+  border-left: 1px solid rgba(138, 43, 226, 0.3); /* border-accent-purple/30 */
+  color: var(--text-light);
+}
+
+.sheetLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* gap-6 */
+  padding-top: 1.5rem; /* py-6 */
+  padding-bottom: 1.5rem; /* py-6 */
+}
+
+.sheetLink {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 500; /* font-medium */
+  transition-property: color;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.sheetLink:hover {
+  color: var(--accent-purple);
+}
+
+.sheetHireMeButton {
+  background-color: var(--accent-purple);
+  color: white;
+  padding: 0.5rem 1.5rem; /* px-6 py-2 */
+  border-radius: 9999px; /* rounded-full */
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease;
+}
+
+.sheetHireMeButton:hover {
+  background-color: var(--light-purple);
+  transform: scale(1.05);
+}

@@ -1,19 +1,21 @@
 import Header from "./components/header.jsx"
-import HeroSection from "./components/hero-section.jsx"
-import ServicesSection from "./components/services-section.jsx"
-import ProjectsSection from "./components/projects-section.jsx"
-import AboutSection from "./components/about-section.jsx"
-import SkillsSection from "./components/skills-section.jsx"
-import TestimonialsSection from "./components/testimonials-section.jsx"
-import BlogSection from "./components/blog-section.jsx"
-import ContactSection from "./components/contact-section.jsx"
-import Footer from "./components/footer.jsx"
+import HeroSection from "./components/hero-section.jsx" // Will be converted next
+import ServicesSection from "./components/services-section.jsx" // Will be converted next
+import ProjectsSection from "./components/projects-section.jsx" // Will be converted next
+import AboutSection from "./components/about-section.jsx" // Will be converted next
+import SkillsSection from "./components/skills-section.jsx" // Will be converted next
+import TestimonialsSection from "./components/testimonials-section.jsx" // Will be converted next
+import BlogSection from "./components/blog-section.jsx" // Will be converted next
+import ContactSection from "./components/contact-section.jsx" // Will be converted next
+import Footer from "./components/footer.jsx" // Will be converted next
+import "./App.css" // For any App-specific styles if needed
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-bg via-dark-bg to-black text-text-light font-sans scroll-smooth">
+    <div className="app-container">
       <Header />
       <main>
+        {/* These components will be converted in subsequent steps */}
         <HeroSection />
         <ServicesSection />
         <ProjectsSection />
